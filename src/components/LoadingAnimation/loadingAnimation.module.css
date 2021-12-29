@@ -1,0 +1,18 @@
+.weightedWheel {
+    border-radius: 50%;
+
+    border: 15px solid rgba(var(--color-values-text), var(--alpha-heavy-fade));
+    border-top: 15px solid rgba(var(--color-values-text), 1);
+
+    width: 45px;
+    height: 45px;
+
+    animation: weightedSpin 1s linear infinite;
+}
+
+@keyframes weightedSpin {
+    0% { transform: rotate(0deg); }
+    25% { transform: rotate(30deg); }
+    75% { transform: rotate(330deg); }
+    100% { transform: rotate(360deg); }
+}

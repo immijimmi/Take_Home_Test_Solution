@@ -1,0 +1,15 @@
+.text {
+    color: rgba(var(--color-values-white), var(--alpha-light-fade))
+}
+
+.currencyIn {
+    background-color: rgba(var(--color-values-good), var(--alpha-light-fade));
+}
+
+.currencyOut {
+    background-color: rgba(var(--color-values-bad), var(--alpha-light-fade));
+}
+
+.currencyExchange {
+    background-color: rgba(var(--color-values-neutral), var(--alpha-light-fade));
+}

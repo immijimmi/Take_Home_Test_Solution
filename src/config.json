@@ -1,0 +1,38 @@
+{
+    "resources": {
+        "icons": {
+            "copy": "./res/icons/copy_scuffed.png",
+            "arrow": {
+                "exchange": {
+                    "bright": "./res/icons/arrow/exchange_arrow_bright_scuffed.png"
+                },
+                "thin": {
+                    "right": "./res/icons/arrow/thin/right_arrow_scuffed.png"
+                },
+                "medium": {
+                    "up": "./res/icons/arrow/medium/up_arrow_scuffed.png",
+                    "right": "./res/icons/arrow/medium/right_arrow_scuffed.png",
+                    "down": "./res/icons/arrow/medium/down_arrow_scuffed.png"
+                }
+            },
+            "currency": {
+                "ETH": "./res/icons/currency/eth_scuffed.png",
+                "BTC": "./res/icons/currency/btc_scuffed.png",
+                "USD": "./res/icons/currency/usd_scuffed.png"
+            }
+        }
+    },
+    "transactions": {
+        "data_source": {
+            "root_url": "http://127.0.0.1:8888",
+            "paths": {
+                "prices": "/prices",
+                "history": {
+                    "btc-noncustodial": "/btc-txs",
+                    "eth-noncustodial": "/eth-txs",
+                    "custodial": "/custodial-txs"
+                }
+            }
+        }
+    }
+}

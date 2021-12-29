@@ -1,0 +1,17 @@
+.buttonBox {
+    cursor: pointer;
+}
+
+.buttonBox:hover {
+    background-color: var(--color-overlay-heavy-highlight);
+}
+
+.buttonBoxActive {
+    transition: 1s ease-in;
+}
+
+.buttonBoxActive:active {
+    background-color: rgba(var(--color-values-good), var(--alpha-light-fade));
+
+    transition: 0s linear;
+}

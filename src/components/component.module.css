@@ -1,0 +1,179 @@
+/* Generic styles that can be used by multiple individual components go here */
+
+.flex {
+    display: flex;
+}
+
+.stretchToFit {
+    display: flex;
+    flex: 1 1 auto;
+}
+
+.columnChildren {
+    /* Elements with this style will be displayed top to bottom. */
+    display: flex;
+    flex-direction: column;
+}
+
+.rowChildren {
+    /* Elements with this style will be displayed left to right. */
+    display: flex;
+    flex-direction: row;
+}
+
+.xyCenterChildren {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.xCenterChildren {
+    display: flex;
+    justify-content: center;
+}
+
+.xRightChildren {
+    display: flex;
+    justify-content: right;
+}
+
+.xyCenterStartChildren {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.baseBackground {
+    background-color: rgba(var(--color-values-background), 1);
+}
+
+.baseFont {
+    color: rgba(var(--color-values-text), 1);
+    font-family: var(--font-family-text);
+    font-size: var(--font-size-medium);
+}
+
+.justifiedText {
+    text-align: center;
+}
+
+.mediumHeader {
+    font-size: 26px;
+    font-family: var(--font-family-header);
+}
+
+.largeHeader {
+    font-size: 48px;
+    font-family: var(--font-family-header);
+}
+
+.smallSpacedChildren {
+    padding: var(--padding-small);
+}
+
+.mediumSpacedChildren {
+    padding: var(--padding-medium);
+}
+
+.largeSpacedChildren {
+    padding: var(--padding-large);
+}
+
+.mediumGapChildren {
+    display: flex;
+    gap: var(--margin-medium);
+}
+
+.smallSpacedItem {
+    margin: var(--margin-small);
+}
+
+.mediumSpacedItem {
+    margin: var(--margin-medium);
+}
+
+.largeSpacedItem {
+    margin: var(--margin-large);
+}
+
+.smallBorderRadius {
+    border-radius: var(--border-radius-small);
+}
+
+.mediumBorderRadius {
+    border-radius: var(--border-radius-medium);
+}
+
+.smallBorder {
+    border: var(--border-small) solid rgba(var(--color-values-text), var(--alpha-heavy-fade));
+    border-radius: var(--border-radius-medium);
+}
+
+.mediumBorder {
+    border: var(--border-medium) solid rgba(var(--color-values-text), var(--alpha-heavy-fade));
+    border-radius: var(--border-radius-medium);
+}
+
+.tinyHr {
+    border: 0px;
+    border-top: var(--border-tiny) solid rgba(var(--color-values-text), var(--alpha-heavy-fade));
+    border-radius: var(--border-radius-tiny);
+}
+
+.mediumHr {
+    border: 0px;
+    border-top: var(--border-medium) solid rgba(var(--color-values-text), var(--alpha-light-fade));
+    border-radius: var(--border-radius-medium);
+
+    margin: 0px; /* Disables default 0.5em hr margin */
+}
+
+.tinyFadedHr {
+    border: 0px;
+    border-top: var(--border-tiny) solid rgba(var(--color-values-highlight), var(--alpha-super-heavy-fade));
+    border-radius: var(--border-radius-tiny);
+}
+
+.xMediumSeparator {
+    width: var(--margin-medium);
+}
+
+.ySmallScrollbar {
+    /* Requires an absolute height to be set on the same component */
+    overflow-y: scroll;
+}
+
+.ySmallScrollbar::-webkit-scrollbar {
+    width: 6px;
+}
+
+.ySmallScrollbar::-webkit-scrollbar-track  {
+    background: rgba(var(--color-values-text), var(--alpha-heavy-fade));
+    border-radius: var(--border-radius-small);
+}
+
+.ySmallScrollbar::-webkit-scrollbar-thumb {
+    background: rgba(var(--color-values-text), var(--alpha-light-fade));
+    border-radius: var(--border-radius-small);
+    width: 2px;
+}
+
+.lightHighlight {
+    background-color: var(--color-overlay-light-highlight);
+}
+
+.mediumHighlight {
+    background-color: var(--color-overlay-medium-highlight);
+}
+
+.heavyHighlight {
+    background-color: var(--color-overlay-heavy-highlight);
+}
+
+.mediumHighlightBorder {
+    border: var(--border-medium) solid var(--color-overlay-medium-highlight);
+}
+
+.baseOutline:focus {
+    outline: 1px solid rgba(var(--color-values-text), 1);
+}

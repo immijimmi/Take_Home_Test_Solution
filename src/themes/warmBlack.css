@@ -1,0 +1,54 @@
+body {
+    --color-values-black: 5, 4, 0;
+    --color-values-yellow: 165, 135, 13;
+    --color-values-green: 15, 106, 5;
+    --color-values-red: 116, 10, 0;
+    --color-values-white: 255, 252, 245;
+    /*
+        Use of absolute colors should be avoided in most cases in component css files,
+        in favour of the color variables named by description/intended use (below)
+    */
+
+    /* Used to generate RGBA values */
+    --alpha-light-fade: 0.75;
+    --alpha-medium-fade: 0.5;
+    --alpha-heavy-fade: 0.25;
+    --alpha-very-heavy-fade: 0.12;
+    --alpha-super-heavy-fade: 0.06;
+    --alpha-ultra-heavy-fade: 0.04;
+
+    --font-size-tiny: 11px;
+    --font-size-small: 13px;
+    --font-size-medium: 18px;
+
+    --font-family-text: "Bahnscrift Light", "Tahoma Light";
+    --font-family-header: "Bahnschrift", "Tahoma";
+
+    --color-values-text: var(--color-values-yellow);
+    --color-values-background: var(--color-values-black);
+    --color-values-highlight: var(--color-values-white);
+
+    --color-values-good: var(--color-values-green);
+    --color-values-neutral: var(--color-values-yellow);
+    --color-values-bad: var(--color-values-red);
+
+    --color-overlay-light-highlight: rgba(var(--color-values-highlight), var(--alpha-ultra-heavy-fade));
+    --color-overlay-medium-highlight: rgba(var(--color-values-highlight), var(--alpha-super-heavy-fade));
+    --color-overlay-heavy-highlight: rgba(var(--color-values-highlight), var(--alpha-very-heavy-fade));
+
+    --padding-small: 3px;
+    --padding-medium: 6px;
+    --padding-large: 12px;
+
+    --margin-small: var(--padding-small);
+    --margin-medium: var(--padding-medium);
+    --margin-large: var(--padding-large);
+
+    --border-tiny: 1px;
+    --border-small: 2px;
+    --border-medium: 3px;
+
+    --border-radius-tiny: 1px;
+    --border-radius-small: 2px;
+    --border-radius-medium: 2px;
+}

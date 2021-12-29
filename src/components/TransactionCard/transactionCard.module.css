@@ -1,0 +1,14 @@
+.complete {
+    border: var(--border-small) solid rgba(var(--color-values-highlight), var(--alpha-super-heavy-fade));
+}
+
+.notComplete {
+    border: var(--border-small) dashed rgba(var(--color-values-highlight), var(--alpha-heavy-fade));
+}
+
+.pendingBox {
+    background-color: rgba(var(--color-values-highlight), var(--alpha-heavy-fade));
+    color: rgba(var(--color-values-white), var(--alpha-light-fade));
+
+    font-size: var(--font-size-tiny);
+}

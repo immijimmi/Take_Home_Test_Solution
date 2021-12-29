@@ -1,0 +1,11 @@
+.container {
+    height: calc(
+        100vh - (
+            (var(--border-medium) * 2) +
+            (var(--margin-medium) * 2) +
+            (var(--padding-medium) * 2)
+        )
+    );
+
+    min-width: 480px;
+}

@@ -1,0 +1,5 @@
+- Amounts are not calculated with the same degree of rigour that would be required if this app were creating
+  transactions rather than just displaying existing ones
+- Values used for indexing or matching the returned API data are not organised into enums,
+  since the way that the API organises its data is not known and therefore cannot be imitated
+- Mobile-first design is not implemented in areas that would cause a conflict with component-specific styles

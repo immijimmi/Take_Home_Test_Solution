@@ -1,0 +1,6 @@
+@media only screen and (max-width: 1280px) {
+    /* I'm sorry mobile-first, I've betrayed you ;_; */
+    .spaceHolder {
+        display: none;
+    }
+}
