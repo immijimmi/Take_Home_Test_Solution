@@ -76,7 +76,8 @@ function TransactionList({ transactions, classNames, height }: TransactionListPr
                 <select
                     className={sortClassName}
                     value={sort}
-                    onChange={(event) => setSort(event.target.value as keyof TransactionDetails)}>
+                    onChange={(event) => setSort(event.target.value as keyof TransactionDetails)}
+                >
                     <option value="createdAt">Datetime</option>
                     <option value="from">From</option>
                     <option value="to">To</option>
