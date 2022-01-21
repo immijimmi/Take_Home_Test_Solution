@@ -28,7 +28,9 @@ class TransactionStruct implements TransactionDetails {
 
                 this.from = dataAsBtcTransaction.from;
                 this.to = dataAsBtcTransaction.to;
-                this.createdAt = Methods.prettifyIsoString(new Date(dataAsBtcTransaction.insertedAt).toISOString());
+                this.createdAt = Methods.prettifyIsoString(
+                    new Date(dataAsBtcTransaction.insertedAt * 1000).toISOString()
+                );
                 this.isComplete = dataAsBtcTransaction.state === 'CONFIRMED';
                 this.cryptoAmount = dataAsBtcTransaction.amount;
                 this.usdAmount = Methods.floatToBigInt(
@@ -45,7 +47,9 @@ class TransactionStruct implements TransactionDetails {
 
                 this.from = dataAsEthTransaction.from;
                 this.to = dataAsEthTransaction.to;
-                this.createdAt = Methods.prettifyIsoString(new Date(dataAsEthTransaction.insertedAt).toISOString());
+                this.createdAt = Methods.prettifyIsoString(
+                    new Date(dataAsEthTransaction.insertedAt * 1000).toISOString()
+                );
                 this.isComplete = dataAsEthTransaction.state === 'CONFIRMED';
                 this.cryptoAmount = dataAsEthTransaction.amount;
                 this.usdAmount = Methods.floatToBigInt(
