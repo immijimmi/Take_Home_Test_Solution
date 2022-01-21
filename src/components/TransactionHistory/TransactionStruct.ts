@@ -83,8 +83,8 @@ class TransactionStruct implements TransactionDetails {
     }
 
     match(query: string): false | keyof TransactionDetails {
-        if (this.from?.includes(query.toLowerCase())) return 'from';
-        if (this.to?.includes(query.toLowerCase())) return 'to';
+        if (this.from?.toLowerCase().includes(query.toLowerCase())) return 'from';
+        if (this.to?.toLowerCase().includes(query.toLowerCase())) return 'to';
         if (this.createdAt.startsWith(query)) return 'createdAt';
         if (query.toLowerCase() === 'pending' && !this.isComplete) return 'isComplete';
         return false;
